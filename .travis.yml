@@ -3,10 +3,8 @@ python: 2.7
 cache:
   directories:
     - $HOME/.cache/pip
-    - ntorque
-    - pyramid_torque_engine
-    - winnow.gi
 install:
+  - pip install -U pip wheel
   - pip install --upgrade setuptools
   - pip install --upgrade pip
   - pip install setuptools_git==1.1
