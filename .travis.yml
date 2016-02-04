@@ -1,20 +1,11 @@
 sudo: required
 dist: trusty
-language: python
-python: 2.7
+language: ruby
 cache:
   directories:
-  - $HOME/.cache/pip
-install:
-- pip install --upgrade setuptools
-- pip install --upgrade pip
-- pip install -U pip wheel
-- pip install setuptools_git==1.1
-- pip install -r requirements.txt --download-cache "$HOME/.cache/pip"
+  - $HOME/hola
+install: true
 script:
-- easy_install --version
-- python smile.py
-env:
-  global:
-  - secure: PdVuok2NXTvnTcID3/zjr89sKwFLDx5wA2WAB2IAft1BsVF04lCEwQUnBABVHTv+BluVajklbNdHM75+n8Xzrlmpn8+lwo7UUQBDmMTVi2N/Dck/6y4yUjvvu6R8Ws0tJOS5Ci1j7gVvc/bcCL7eRkvmVxLQs89cwEN/dSWxG75vhnhhQSSclHY5Dqqp+7pyT0EhuE3jrpzRU9VXIkoCkc66skiSPr/zP3ajz5eHkYRCcHO8KwcOX8abE91c85U0Baaa/IkEVg/We8r+iMS1270QAUsDLCJlBd/+2bwN7DCpxQFHiBNCsUflmuDVZ4F0Hem/7Tn67f+qcBCvDiIuffJpeafYzneZVQCaM9ithAsI9F2ihsC/Alj7yq87cp4vzV76hwGDLrZTZfD7Srn0aT/iDW6WdUeJEnJkQbmKXbinMlEd7Ffa8IQDTvbnUCJDWaIWq6k07ECZKLUmBhBbweaQzVdw4DplJHLAQlnerxwCX6Igb5HlZZHFMtCGfj8TLaWjZyXNoX7EqAPNwCE7qE2W5tAyZdj9XFdPvrenNd1wGm89DLT88ztprfdovjgbt12WTS8CicWwrpXI6DuP87KGrn2ewJAYtCnaC/IBCmq+pjdseWfSJpUU9+9bXFxZ6v7KNca3fiIsdH6YleIMP90gBZXlJNLY99+1ZLJBDlI=
-  - secure: trtqTqPC3iBytSylacN7wdUIAfNYMxOBZhj9eVdVG9oRXzX+A5bDeElEQCyWoB9G6H7ya607pM+ZsCac78HQVL9PBqzyylUExHtxsfIpUypxzwcXGHSMmW69EX3241nn3kkntwcx66Y42ZWjheYH7TDas3uureDCyyLgu9/DTp33ZXKafap8gH66t/UUY4rwTHMZ8+quaeGL4ZltKrlsvoCVD0LYX7vbNj5kgyCxw5aZotEQdGK5k+DbRoF7VrtQtAYgJJmUWEXsG6cdDXoo8Vxgr19IrSk17ivHGVINqCvfeMLNbb3x80mRVPrAtq7ULEePkeu3VbBlsFZyr/3ACIFkEdpSeoLGfwpySwoj3Nn96/Dkp6oGgZZJWS2BoxRDRBtiLd/1iHIgKwkdIrlXsehgoJfuJxMfcoWn3hh6/6rKJ/HnB5q0O4EwPgUrFnNcyH1oP+nk4nlD/CXb1Ay45IeRsTsGujHmAoA1dNeTqtaXu/73uVIFNmxYDof649P0zljsb6v1IGaAaC3SkJ3U5ynq8g2fAlToAbDdSsfLo24aYucSGPVnZDsejC/nHEoYe8Z+DjBCKv2wIrokrxRpc0JBvVms2n4ZG6Dv9q6lxagQN1Oi3esuLv8zsdracIeKPbvCk83gletas/nHqQcYa/ZT3LmPNZKn/btOohAQUyI=
+  - mdkir hola
+  - cd hola
+  - echo "//this is a file to commit and cache, why not?" >> new.txt
