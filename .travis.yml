@@ -3,4 +3,4 @@ language: objective-c
 install:
    - echo "hola"
 script:
-    - echo hello
+    - eho hello
