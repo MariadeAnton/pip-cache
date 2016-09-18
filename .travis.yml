@@ -8,4 +8,4 @@ script:
   - mkdir hola
   - cd hola
   - echo "//this is a file to commit and cache, why not?" >> new.txt
-  - eho fail
+  - eho please fail
