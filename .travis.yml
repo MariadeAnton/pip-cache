@@ -1,6 +1,5 @@
 language: python
 python:
   - "2.7.10"
-install: true
 script:
   - echo `pip --version`
